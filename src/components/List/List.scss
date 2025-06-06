@@ -1,0 +1,27 @@
+.thumbnail-list {
+    display: flex;
+    flex-wrap: wrap;
+
+    .thumbnail {
+        width: 160px;
+        margin: 0.5rem;
+        .thumbnail-content {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+    
+            img {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                object-position: top;
+                display: block;
+                border-radius: 1rem;
+            }
+    
+            .name {
+                color: #000
+            }
+        }
+    }
+}

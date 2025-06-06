@@ -1,0 +1,78 @@
+$gryffindor-primary: #740001;  
+$gryffindor-secondary: #D3A625;  
+
+$hufflepuff-primary: #FFDB00;  
+$hufflepuff-secondary: #000000;  
+
+$ravenclaw-primary: #0E1A40;  
+$ravenclaw-secondary: #946B2D;  
+
+$slytherin-primary: #1A472A;  
+$slytherin-secondary: #5D5D5D;  
+
+
+ul {
+    list-style: none;
+    display: flex;
+    li {
+        padding: 0.5rem 1rem;
+        margin: 0 0.5rem;
+        border-radius: 1rem;
+        border: 3px solid transparent;
+        &.active {
+            border-color: #000 !important;
+        }
+        &:hover {
+            img {
+                transform: scale(1.0);
+            }
+        }
+        img {
+            width: 250px;
+            height: 300px;
+            object-fit: cover;
+            object-position: top;
+            display: block;
+            transition: transform 0.5s;
+            cursor: pointer;
+            transform: scale(0.9);
+
+            
+        }
+        .house-name {
+            margin-top: 1.25rem;
+            margin-bottom: 0.25rem;
+            font-family: 'HarryPotterFont';
+            font-size: 1.25rem
+        }
+    }
+}
+
+.gryffindor {
+  color: $gryffindor-primary;
+  background-color: $gryffindor-secondary;
+  a {
+      color: $gryffindor-primary;
+  }
+}
+.hufflepuff {
+  color: $hufflepuff-primary;
+  background-color: $hufflepuff-secondary;
+  a {
+      color: $hufflepuff-primary;
+  }
+}
+.ravenclaw {
+  color: $ravenclaw-primary;
+  background-color: $ravenclaw-secondary;
+  a {
+      color: $ravenclaw-primary;
+  }
+}
+.slytherin {
+  color: $slytherin-primary;
+  background-color: $slytherin-secondary;
+  a {
+      color: $slytherin-primary;
+  }
+}

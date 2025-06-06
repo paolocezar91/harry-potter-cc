@@ -1,0 +1,17 @@
+nav {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background: var(--secondary);
+    ul {
+        list-style: none;
+        display: flex;
+        li {
+            padding: 0.5rem 1rem;
+            a {
+                color: var(--primary);
+            }
+        }
+    }
+}

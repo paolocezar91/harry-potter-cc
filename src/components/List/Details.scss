@@ -1,0 +1,131 @@
+$gryffindor-primary: #740001;  
+$gryffindor-secondary: #D3A625;  
+
+$hufflepuff-primary: #FFDB00;  
+$hufflepuff-secondary: #000000;  
+
+$ravenclaw-primary: #0E1A40;  
+$ravenclaw-secondary: #946B2D;  
+
+$slytherin-primary: #1A472A;  
+$slytherin-secondary: #5D5D5D;  
+
+.profile {
+  display: flex;
+  margin: 2rem auto;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-top: 5px solid;
+
+  &.gryffindor {
+    border-color: $gryffindor-primary;
+    .name {
+      color: $gryffindor-primary;
+    }
+  }
+  
+  &.hufflepuff {
+    border-color: $hufflepuff-primary;
+    .name {
+      color: $hufflepuff-primary;
+    }
+  }
+  
+  &.ravenclaw {
+    border-color: $ravenclaw-primary;
+    .name {
+      color: $ravenclaw-primary;
+    }
+  }
+  
+  &.slytherin {
+    border-color: $slytherin-primary;
+    .name {
+      color: $slytherin-primary;
+    }
+  }
+
+  .image-container {
+    width: 250px;
+    min-width: 250px;
+    
+    .image {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: top;
+      display: block;
+    }
+  }
+
+  .info {
+    padding: 1.5rem;
+    flex-grow: 1;
+
+    .name-container {
+      display: flex;
+      margin-bottom: 2rem;
+
+      button {
+        height: 48px;
+        background: transparent;
+        box-shadow: none;
+        cursor: pointer;
+        border: 0;
+      }
+  
+      .name {
+        margin-top: 0;
+        font-size: 2rem;
+        margin-bottom: 0;
+        transition: color 0.3s ease;
+      }
+    }
+
+
+    .alternate-names {
+      font-style: italic;
+      color: #666;
+      margin-top: -0.5rem;
+    }
+
+    .details-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 1rem;
+      margin: 1.5rem 0;
+
+      .detail {
+        .detail-value {
+          display: block;
+          color: #222;
+        }
+      }
+    }
+
+    .additional-info {
+      p {
+        margin: 0.5rem 0;
+        color: #444;
+      }
+    }
+  }
+}
+
+// Responsive design
+@media (max-width: 768px) {
+  .profile {
+    flex-direction: column;
+
+    .image-container {
+      width: 100%;
+      height: 300px;
+    }
+
+    .details-grid {
+      grid-template-columns: 1fr !important;
+    }
+  }
+}

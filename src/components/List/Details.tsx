@@ -4,7 +4,7 @@ import { capitilize, useLocalStorage } from '../../shared/utils';
 import { HeartIcon as HeartOutline } from "@heroicons/react/24/outline";
 import { HeartIcon as HeartSolid } from "@heroicons/react/24/solid";
 
-function Details({ character }: { character: Character }) {
+export default function Details({ character }: { character: Character }) {
   const [favorites, setFavorite] = useLocalStorage<string[]>('favorites', [])
 
   const setAsFavorite = (id: string) => {
@@ -101,5 +101,3 @@ function Details({ character }: { character: Character }) {
     </div>
   );
 };
-
-export default Details

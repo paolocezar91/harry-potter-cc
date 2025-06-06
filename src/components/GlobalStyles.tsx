@@ -1,6 +1,6 @@
 import { useTheme } from "./ThemeContext";
 
-export const GlobalStyles = () => {
+export default function GlobalStyles () {
   const { theme } = useTheme();
 
   return (

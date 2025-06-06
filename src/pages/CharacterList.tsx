@@ -4,7 +4,7 @@ import type { Character } from "../shared/types";
 import List from "../components/List/List";
 import { useDocumentTitle } from "../shared/utils";
 
-function CharacterList() {
+export default function CharacterList() {
   const [characters, setCharacters] = useState<Character[]>([]);
   const [loaded, setLoaded] = useState<boolean>(false);
   const title = 'Harry Potter Mischief Managed App - Character List'
@@ -30,5 +30,3 @@ function CharacterList() {
     </>
   )
 }
-
-export default CharacterList

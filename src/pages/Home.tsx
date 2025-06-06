@@ -1,7 +1,7 @@
 import HousePicker from "../components/HousePicker/HousePicker"
 import { useDocumentTitle } from "../shared/utils";
 
-function Home() {
+export default function Home() {
   const title = 'Harry Potter Mischief Managed App - Home'
   useDocumentTitle(title);
 
@@ -12,5 +12,3 @@ function Home() {
     </>
   )
 }
-
-export default Home

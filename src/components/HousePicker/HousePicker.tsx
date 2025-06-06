@@ -2,7 +2,7 @@ import { capitilize } from "../../shared/utils";
 import { useTheme } from "../ThemeContext";
 import "./HousePicker.scss";
 
-function HousePicker() {
+export default function HousePicker() {
   const { setTheme, theme } = useTheme();
 
   const houses = [
@@ -28,5 +28,3 @@ function HousePicker() {
     </div>
   );
 }
-
-export default HousePicker;

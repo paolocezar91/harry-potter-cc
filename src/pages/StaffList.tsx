@@ -4,7 +4,7 @@ import type { Character } from "../shared/types";
 import List from "../components/List/List";
 import { useDocumentTitle } from "../shared/utils";
 
-function StaffList() {
+export default function StaffList() {
   const [staff, setStaff] = useState<Character[]>([]);
   const [loaded, setLoaded] = useState<boolean>(false);
   const title = 'Harry Potter Mischief Managed App - Staff List'
@@ -28,5 +28,3 @@ function StaffList() {
     </>
   )
 }
-
-export default StaffList

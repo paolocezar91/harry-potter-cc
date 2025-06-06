@@ -1,7 +1,7 @@
 import type { Character } from "../../shared/types";
 import "./List.scss";
 
-function List({ items }: {items: Character[]}) {
+function List({ items }: { items: Character[] }) {
 
   return (
     <div className="thumbnail-list">

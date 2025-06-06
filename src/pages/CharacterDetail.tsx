@@ -6,7 +6,7 @@ import { useParams } from "react-router-dom";
 import { useDocumentTitle } from "../shared/utils";
 
 
-function CharacterDetail() {
+export default function CharacterDetail() {
   const { id } = useParams<{ id: string }>();
   const [character, setCharacter] = useState<Character[] | null>(null);
   const [loaded, setLoaded] = useState<boolean>(false);
@@ -27,5 +27,3 @@ function CharacterDetail() {
     <Details character={character[0]} />
   </div>)
 }
-
-export default CharacterDetail
